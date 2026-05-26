@@ -9,10 +9,11 @@ pipeline {
                  url: 'https://github.com/dipali-nagesh/Configuration-Management-Using-Ansible.git'
             }
         }
-
-        stage('Run Ansible Playbook') {
+        stage('Check Files') {
             steps {
-                    sh 'ansible-playbook Configration.yml'
+                sh 'pwd'
+                sh 'ls -la'
+        
             }
         }
 
