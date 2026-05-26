@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                  git branch: 'main',
-                url: 'https://github.com/dipali-nagesh/Configuration-Management-Using-Ansible.git'
+                 url: 'https://github.com/dipali-nagesh/Configuration-Management-Using-Ansible.git'
             }
         }
 
