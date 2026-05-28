@@ -9,7 +9,7 @@ This project demonstrates an end-to-end DevOps automation workflow using  Ansibl
 - Implement monitoring using Prometheus and Grafana
 - Reduce manual configuration effort
 - Implement CI/CD pipeline integration
-- 
+  
 # Technologies Used
 | Category | Tool |
 |---|---|
@@ -65,7 +65,6 @@ Metrics are collected and visualized using Grafana dashboards.
 # How to Run the Project
 
 ## Prerequisites
-
 Install:
 - Ansible
 - Git
@@ -74,9 +73,9 @@ Install:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/dipali-nagesh/Configuration-Management-Using-Ansible.git
 
-cd project-name
+cd project-Configuration-Management-Using-Ansible
 
 ## 2. Configure AWS Credentials
 
@@ -96,7 +95,7 @@ inventory.ini
 ```bash
 cd ansible
 
-ansible-playbook -i inventory.ini playbooks/ Configration.yml
+ansible-playbook -i inventory.ini Configration.yml
 
 # CI/CD Pipeline
 
