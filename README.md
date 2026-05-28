@@ -6,17 +6,15 @@ This project demonstrates an end-to-end DevOps automation workflow using  Ansibl
 # Objectives
 - Automate server configuration using Ansible
 - Configure web servers using Nginx
-- Implement monitoring using Prometheus and Grafana
 - Reduce manual configuration effort
 - Implement CI/CD pipeline integration
-- 
+  
 # Technologies Used
 | Category | Tool |
 |---|---|
 | Cloud Platform | AWS EC2 |
 | Configuration Management | Ansible |
 | Web Server | Nginx |
-| Monitoring | Prometheus, Grafana |
 | Version Control | Git & GitHub |
 | CI/CD | GitHub Actions / Jenkins |
 | Operating System | Ubuntu Server |
@@ -34,9 +32,7 @@ Ansible Configuration Management
    ├── Install Packages
    ├── Configure Nginx
    ├── Deploy Application
-   └── Configure Monitoring
-   ↓
-Prometheus + Grafana
+   
 
 # Project Workflow
 ## Step 1
@@ -54,18 +50,12 @@ Ansible is used to:
 ansible all -m ping -i inventory.ini
 ansible-playbook -i inventory.ini Configration.yml
 
-## Step 4 — Monitoring Setup
-
-Monitoring stack includes:
-- Prometheus
-- Grafana
 
 Metrics are collected and visualized using Grafana dashboards.
 
 # How to Run the Project
 
 ## Prerequisites
-
 Install:
 - Ansible
 - Git
@@ -74,9 +64,9 @@ Install:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/dipali-nagesh/Configuration-Management-Using-Ansible.git
 
-cd project-name
+cd project-Configuration-Management-Using-Ansible
 
 ## 2. Configure AWS Credentials
 
@@ -96,7 +86,7 @@ inventory.ini
 ```bash
 cd ansible
 
-ansible-playbook -i inventory.ini playbooks/ Configration.yml
+ansible-playbook -i inventory.ini Configration.yml
 
 # CI/CD Pipeline
 
@@ -121,7 +111,6 @@ Through this project, the following concepts were learned:
 - Configuration Management
 - Automation using Ansible
 - CI/CD pipeline implementation
-- Monitoring and logging
 - Cloud deployment on AWS
 
 # Future Enhancements
@@ -129,6 +118,7 @@ Through this project, the following concepts were learned:
 - Kubernetes integration
 - Infrastructure as Code (IaC)-Terraform
 - Dockers
+-Monitoring tools
 
 # Screenshots
 
@@ -136,7 +126,7 @@ Add screenshots for:
 - Ansible Playbook Execution
 - EC2 Instances
 - Nginx Web Page
-- Grafana Dashboard
+
 
 # Conclusion
 
