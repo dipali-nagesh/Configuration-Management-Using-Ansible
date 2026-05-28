@@ -12,7 +12,6 @@ The primary objective of the project is to automate:
 ✅ Server Configuration
 ✅ Application Deployment
 ✅ Web Server Setup
-✅ Monitoring Configuration
 ✅ CI/CD Integration
 
 using **Configuration Management tools** and modern DevOps practices.
@@ -23,7 +22,6 @@ using **Configuration Management tools** and modern DevOps practices.
 
 ✔️ Automate server configuration using Ansible
 ✔️ Configure web servers using Nginx
-✔️ Implement monitoring using Prometheus and Grafana
 ✔️ Reduce manual configuration effort
 ✔️ Implement CI/CD pipeline integration
 ✔️ Improve deployment consistency and automation
@@ -37,7 +35,6 @@ using **Configuration Management tools** and modern DevOps practices.
 | ☁️ Cloud Platform           | AWS EC2                  |
 | ⚙️ Configuration Management | Ansible                  |
 | 🌐 Web Server               | Nginx                    |
-| 📊 Monitoring               | Prometheus & Grafana     |
 | 🔧 Version Control          | Git & GitHub             |
 | 🚀 CI/CD                    | GitHub Actions / Jenkins |
 | 🐧 Operating System         | Ubuntu Server            |
@@ -48,10 +45,8 @@ using **Configuration Management tools** and modern DevOps practices.
 
 ```bash
 Configuration-Management-Using-Ansible/
-│
-├── ansible/
-│   ├── inventory.ini
-│   ├── Configration.yml
+|── inventory.ini
+│── Configration.yml
 │
 ├── .github/
 │   └── workflows/
@@ -100,12 +95,7 @@ Configuration-Management-Using-Ansible/
 │Install │ │Configure│ │ Deploy App │
 │Packages│ │ Nginx   │ │ Application │
 └────────┘ └────────┘ └────────────┘
-            │
-            ▼
- ┌────────────────────────┐
- │ 📊 Monitoring Stack    │
- │ Prometheus + Grafana  │
- └────────────────────────┘
+
 ```
 
 ---
@@ -127,7 +117,6 @@ Tasks automated using Ansible:
 ✅ Install Required Packages
 ✅ Configure Nginx Web Server
 ✅ Deploy Application
-✅ Configure Monitoring Tools
 
 ---
 
@@ -144,17 +133,6 @@ ansible all -m ping -i inventory.ini
 ```bash
 ansible-playbook -i inventory.ini Configration.yml
 ```
-
----
-
-# 📊 Monitoring Setup
-
-The monitoring stack includes:
-
-* 📈 Prometheus
-* 📊 Grafana
-
-Prometheus collects server metrics and Grafana visualizes those metrics using interactive dashboards.
 
 ---
 
@@ -278,7 +256,7 @@ Through this project, the following concepts were learned:
 🚀 Kubernetes Integration
 ☁️ Terraform for Infrastructure as Code
 🐳 Docker Containerization
-📊 Advanced Monitoring Dashboards
+📊 Monitoring Dashboards
 🔄 Fully Automated CI/CD Pipeline
 
 ---
@@ -290,7 +268,6 @@ Add screenshots for:
 📷 Ansible Playbook Execution
 📷 AWS EC2 Instances
 📷 Nginx Web Page
-📷 Grafana Dashboard
 📷 GitHub Actions Workflow
 
 ---
